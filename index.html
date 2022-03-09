@@ -17,6 +17,7 @@ Data Last Modified: 3/9/2022 -->
       <img src="images/bb.jpg" alt="picture of Basketball" />
       <nav>
         <ul>
+          <li><a href="index.html" id="headLink">Home</a></li>
           <li><a href="rules.html" id="headLink">Rules</a></li>
         </ul>
       </nav>
@@ -39,12 +40,39 @@ Data Last Modified: 3/9/2022 -->
       </article>
     </main>
     <footer>
-      <p>&#169;Adam Corporation</p>
       <p>
-        <a href="mailto:asandler@smail.pembinatrails.ca" id="contactLink"
-          >Contact me</a
+        <b
+          >*this form is for a school project DO NOT put any confedential info
+          into the inputs</b
         >
       </p>
+      <form action="">
+        <fieldset>
+          <legend>Contact Form</legend>
+          <br />
+          <!-- user info section -->
+          <label for="fname">First Name:</label>
+          <input type="text" name="fname" id="fname" /><br /><br />
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname" id="lname" /><br /><br />
+          <label for="userEmail">Email:</label>
+          <input type="email" />
+          <hr />
+          <!-- usre satisfaction section -->
+          <p>Did this page help?</p>
+          <input type="radio" name="didThisHelp" />
+          <label for="didThisHelp">Yes</label>
+          <input type="radio" name="didThisHelp" />
+          <label for="didThisHelp">No</label><br /><br />
+          <label for="happyRange">How satisfied are you?</label>
+          <p>
+            0 <input type="range" name="happyRange" min="0" max="100" /> 100
+          </p>
+          <!-- submit -->
+          <input type="submit" name="submit" id="submit" />
+        </fieldset>
+      </form>
+      <p>&#169;Adam Design Company</p>
     </footer>
   </body>
 </html>
