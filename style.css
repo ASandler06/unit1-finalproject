@@ -1,3 +1,11 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+form {
+  background-color: white;
+}
 /* code sourced from https://codetheweb.blog/style-a-navigation-bar-css/ */
 /* puts the image in the top left */
 header img {
