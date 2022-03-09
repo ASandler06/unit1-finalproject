@@ -1,4 +1,5 @@
 /* code sourced from https://codetheweb.blog/style-a-navigation-bar-css/ */
+/* puts the image in the top left */
 header img {
   height: 80px;
   margin-left: 40px;
@@ -35,11 +36,11 @@ header li {
 header li a {
   color: black;
   text-decoration: none;
-}
-/* end of sourced code */
-a:link {
   padding: 30px 25px;
 }
-a:hover {
+/* end of sourced code */
+/* when mouse is hovering over links in nav bar the backfround changes to lightgrey */
+#headLink:hover {
+  padding: 30px 25px;
   background-color: lightgrey;
 }
