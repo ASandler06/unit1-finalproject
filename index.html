@@ -1,8 +1,8 @@
-<!-- Name: Adam Sandler
+<!-- Name: Adam Baruh Sandler
 Course: Software Development 20S
 Teacher: Mr. Hardman
 School: Pembina Trails Early College
-Data Last Modified: 3/9/2022 -->
+Data Last Modified: 3/14/2022 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +14,9 @@ Data Last Modified: 3/9/2022 -->
   </head>
   <body>
     <header>
-      <img src="images/bb.jpg" alt="picture of Basketball" />
+      <a href="index.html"
+        ><img src="images/bb.jpg" alt="picture of Basketball"
+      /></a>
       <nav>
         <ul>
           <li><a href="index.html" id="headLink">Home</a></li>
@@ -37,13 +39,63 @@ Data Last Modified: 3/9/2022 -->
             allowfullscreen
           ></iframe>
         </section>
+        <section>
+          <h3>Basketball Stats</h3>
+          <p>table explaining what basketball stats mean</p>
+          <table>
+            <tr>
+              <td>Abbreviation</td>
+              <td>Meaning</td>
+            </tr>
+            <tr>
+              <td>PTS</td>
+              <td>points</td>
+            </tr>
+            <tr>
+              <td>AST</td>
+              <td>assists</td>
+            </tr>
+            <tr>
+              <td>STL</td>
+              <td>steals</td>
+            </tr>
+            <tr>
+              <td>BLK</td>
+              <td>blocks</td>
+            </tr>
+            <tr>
+              <td>TO</td>
+              <td>turnovers</td>
+            </tr>
+            <tr>
+              <td>PF</td>
+              <td>personal fouls</td>
+            </tr>
+            <tr>
+              <td>MIN</td>
+              <td>minutes</td>
+            </tr>
+            <tr>
+              <td>REB, OREB, DREB</td>
+              <td>rebounds, offensive rebounds, defensive rebounds</td>
+            </tr>
+            <tr>
+              <td>FGM, FGA, FG%</td>
+              <td>field goals made, FGs attempted, the percent of FGs made</td>
+            </tr>
+            <tr>
+              <td>FTM, FTA, FT%</td>
+              <td>free throws made, FTs attempted, percent of FTs made</td>
+            </tr>
+          </table>
+        </section>
       </article>
     </main>
     <footer>
       <p>
         <b
-          >*this form is for a school project DO NOT put any confedential info
-          into the inputs</b
+          >*this form is for a school project <u>do not</u> put any confedential
+          info into the inputs</b
         >
       </p>
       <form action="">
@@ -51,19 +103,28 @@ Data Last Modified: 3/9/2022 -->
           <legend>Contact Form</legend>
           <br />
           <!-- user info section -->
+          <!-- input to get users first name -->
           <label for="fname">First Name:</label>
           <input type="text" name="fname" id="fname" /><br /><br />
+          <!-- input to get users last name -->
           <label for="lname">Last Name:</label>
           <input type="text" name="lname" id="lname" /><br /><br />
-          <label for="userEmail">Email:</label>
-          <input type="email" />
+          <!-- input to get users email -->
+          <label for="userEmail"
+            >Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input type="email" /><br /><br />
+          <!-- input to get users phone number -->
+          <label for="userPhone">Phone Number:</label>
+          <input type="tel" name="userPhone" id="userPhone" min="8" max="12" />
           <hr />
-          <!-- usre satisfaction section -->
+          <!-- user satisfaction section -->
           <p>Did this page help?</p>
-          <input type="radio" name="didThisHelp" />
+          <input type="radio" name="didThisHelp" required />
           <label for="didThisHelp">Yes</label>
-          <input type="radio" name="didThisHelp" />
+          <input type="radio" name="didThisHelp" required />
           <label for="didThisHelp">No</label><br /><br />
+          <!-- slider for user to show how satisfied they are -->
           <label for="happyRange">How satisfied are you?</label>
           <p>
             0 <input type="range" name="happyRange" min="0" max="100" /> 100
@@ -72,7 +133,7 @@ Data Last Modified: 3/9/2022 -->
           <input type="submit" name="submit" id="submit" />
         </fieldset>
       </form>
-      <p>&#169;Adam Design Company</p>
+      <p>&#169;PTEC</p>
     </footer>
   </body>
 </html>
