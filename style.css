@@ -1,13 +1,16 @@
 table,
 th,
 td {
+  padding: 10px;
   border: 1px solid black;
+  color: black;
+  background-color: white;
+  text-align: center;
 }
 form {
   background-color: white;
 }
 /* code sourced from https://codetheweb.blog/style-a-navigation-bar-css/ */
-/* puts the image in the top left */
 header img {
   height: 80px;
   margin-left: 40px;
@@ -47,7 +50,6 @@ header li a {
   padding: 30px 25px;
 }
 /* end of sourced code */
-/* when mouse is hovering over links in nav bar the backfround changes to lightgrey */
 #headLink:hover {
   padding: 30px 25px;
   background-color: lightgrey;
